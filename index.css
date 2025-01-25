@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.index-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #1B244A;
+    width: 600px;
+    height: 450px;
+    align-items: center;
+    margin: auto;
+    margin-top: 10vh;
+}
+.index-container h1 {
+    color: #Fff;
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+#input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 600px;
+    height: 200px;
+    align-items: center;
+    margin-top: 0px;
+}
+#input-container input {
+    width: 300px;
+    height: 40px;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 20px;
+    margin-top: 0px;
+}
+#input-container label {
+    color: #fff;
+    font-family: Verdana;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+#start-btn {
+    background-color: #1B244A;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    font-family: Verdana;
+    font-size: 18px;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+#start-btn:hover {
+    background-color: #9AABD8;
+    color: #1B244A;
+    border: 2px solid #e5ff00;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #1B244A;
+    width: 800px;
+    height: 500px;
+    align-items: center;
+    margin: auto;
+}
+/* #score-container{
+    height: 450px !important;
+} */
+.num-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+
+.num-container h2 {
+    color: #EEEEEE;
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@font-face {
+    src: url("CursedTimerUlil-Aznm.ttf");
+    font-family: ledBasketball;
+}
+
+.num-container h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #F94F6D;
+    background-color: #080001;
+    width: 300px;
+    padding: 20px 0px;
+    font-family: ledBasketball;
+    font-size: 90px;
+}
+
+.forIncrease button {
+    background-color: #1B244A;
+    color: #9AABD8;
+    font-family: ledBasketball;
+    font-size: 18px;
+    border: 2px solid #9AABD8;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.forIncrease button:hover {
+    background-color: #9AABD8;
+    color: #1B244A;
+}
+
+#reset-btn{
+    background-color: #FDE68A;
+    color: #0284C7;
+    padding: 10px 20px;
+    border: 1px solid #047857;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 0px;
+}
+#reset-btn:hover{
+    background-color: #047857;
+    color: #FDE68A;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Tracker</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="index-container mt-5">
+        <!-- Welcome and Team Input Section -->
+        <div id="welcome-section">
+            <h1>Welcome to Score Tracker</h1>
+            <div class="mt-4" id="input-container">
+                <label for="team1-input" class="form-label">Enter Team 1 Name</label>
+                <input type="text" id="team1-input" class="form-control" placeholder="Enter Team 1 Name">
+
+                <label for="team2-input" class="form-label mt-3">Enter Team 2 Name</label>
+                <input type="text" id="team2-input" class="form-control" placeholder="Enter Team 2 Name">
+            </div>
+            <button id="start-btn" class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#scoreModal">
+                Start
+            </button>
+        </div>
+    </div>
+
+    <!-- Game Score Section (Bootstrap Modal) -->
+    <div class="modal fade" id="scoreModal" tabindex="-1" aria-labelledby="scoreModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" id="score-container">
+                
+                <div class="modal-body container">
+                    <div class="num-container">
+                        <div>
+                            <h2 id="team1-name">TEAM 1</h2>
+                            <h1 id="home-score">0</h1>
+                            <div class="forIncrease">
+                                <button id="home-one" onclick="homeOne()">+1</button>
+                                <button id="home-two" onclick="homeTwo()">+2</button>
+                                <button id="home-three" onclick="homeThree()">+3</button>
+                            </div>
+                            <div class="forIncrease">
+                                <button id="home-minus-one" onclick="homeMinusOne()">-1</button>
+                                <button id="home-minus-two" onclick="homeMinusTwo()">-2</button>
+                                <button id="home-minus-three" onclick="homeMinusThree()">-3</button>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 id="team2-name">TEAM 2</h2>
+                            <h1 id="guest-score">0</h1>
+                            <div class="forIncrease">
+                                <button id="guest-one" onclick="guestOne()">+1</button>
+                                <button id="guest-two" onclick="guestTwo()">+2</button>
+                                <button id="guest-three" onclick="guestThree()">+3</button>
+                            </div>
+                            <div class="forIncrease">
+                                <button id="guest-minus-one" onclick="guestMinusOne()">-1</button>
+                                <button id="guest-minus-two" onclick="guestMinusTwo()">-2</button>
+                                <button id="guest-minus-three" onclick="guestMinusThree()">-3</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="reset-btn" onclick="resetScore()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
